@@ -22,4 +22,9 @@ public class Contato {
     public void setTelefone() {
         this.telefone = telefone;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", Telefone: " + telefone;
+    }
 }
