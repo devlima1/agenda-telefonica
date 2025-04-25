@@ -1,6 +1,6 @@
 public class Contato {
-    String nome;
-    String telefone;
+    private String nome;
+    private String telefone;
 
     public Contato(String nome, String telefone) {
         this.nome = nome;
@@ -19,7 +19,7 @@ public class Contato {
         return telefone;
     }
 
-    public void setTelefone() {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
