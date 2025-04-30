@@ -10,7 +10,7 @@ Este é um projeto simples de agenda telefônica desenvolvido em Java. A aplica�
 - **Agenda.java**  
   Gerencia os contatos utilizando uma lista (ArrayList). Implementa os métodos de manipulação como adicionar, remover, buscar, editar e listar contatos.
 
-- **Main.java (AgendaApp)**  
+- **AgendaApp.java**  
   Classe principal do projeto. Apresenta um menu interativo no console para o usuário operar a agenda.
 
 ## 💻 Funcionalidades
@@ -25,4 +25,4 @@ Este é um projeto simples de agenda telefônica desenvolvido em Java. A aplica�
 
 1. Compile os arquivos:
    ```bash
-   javac Contato.java Agenda.java Main.java
+   javac Contato.java Agenda.java AgendaApp.java
