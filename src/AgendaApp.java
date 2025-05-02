@@ -24,8 +24,12 @@ public class AgendaApp {
                     String nome = scanner.nextLine();
                     System.out.println("Telefone: ");
                     String telefone = scanner.nextLine();
-                    agenda.adicionarContato(new Contato(nome, telefone));
-                    System.out.println("Contato adicionado!");
+
+                    if(agenda.adicionarContato(new Contato(nome, telefone))) {
+                        System.out.println("Contato adicionado!");
+                    } else {
+                        System.out.println("Contato já existe.");
+                    }
                     break;
 
                 case 2:
