@@ -22,6 +22,7 @@ public class AgendaApp {
                 case 1:
                     System.out.println("Nome: ");
                     String nome = scanner.nextLine();
+
                     System.out.println("Telefone: ");
                     String telefone = scanner.nextLine();
 
@@ -35,6 +36,7 @@ public class AgendaApp {
                 case 2:
                     System.out.println("Nome do contato para remover: ");
                     String nomeRemover = scanner.nextLine();
+
                     if (agenda.removerContato(nomeRemover)) {
                         System.out.println("Contato removido.");
                     } else {
@@ -45,7 +47,9 @@ public class AgendaApp {
                 case 3:
                     System.out.println("Nome do contato para buscar: ");
                     String nomeBuscar = scanner.nextLine();
+
                     Contato c = agenda.buscarContato(nomeBuscar);
+                    
                     if(c != null) {
                         System.out.println("Contato encontrado: " + c);
                     } else {
@@ -61,12 +65,15 @@ public class AgendaApp {
                 case 5:
                     System.out.println("Nome do contato para editar: ");
                     String nomeEditar = scanner.nextLine();
+
                     System.out.println("Novo nome: ");
                     String novoNome = scanner.nextLine();
+
                     System.out.println("Novo telefone: ");
                     String novoTelefone = scanner.nextLine();
 
                     Contato novoContato = new Contato(novoNome, novoTelefone);
+
                     if (agenda.editarContato(nomeEditar, novoContato)) {
                         System.out.println("Contato editado com sucesso.");
                     } else {
