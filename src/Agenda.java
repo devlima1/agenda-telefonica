@@ -7,8 +7,14 @@ public class Agenda {
         contatos = new ArrayList<>();
     }
 
-    public void adicionarContato(Contato contato) {
+    public boolean adicionarContato(Contato contato) {
+        for (Contato c : contatos) {
+            if (c.getNome().equalsIgnoreCase(contato.getNome())) {
+                return false;
+            }
+        }
         contatos.add(contato);
+        return true;
     }
 
     public boolean removerContato(String nome) {
